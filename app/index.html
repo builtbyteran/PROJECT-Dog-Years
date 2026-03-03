@@ -3,10 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Project Dog Years</title>
   </head>
   <body>
+    <!-- ---------------------------- Hero section ----------------------------- -->
+    <header class="hero">
+      <h1 class="hero__title">Dog 44</h1>
+      <p class="hero__description">
+        What if you could tell how old your dog was just by calculating it?
+      </p>
+    </header>
+
+    <!-- --------------------------- Feature section --------------------------- -->
+    <section class="feature">
+      <div class="feature__container">
+        <div class="feature__item">
+          <h2 class="feature__title feature__title--selected">
+            Your doggy's age reimagined!
+          </h2>
+          <p class="feature__description">
+            For any reason- <br />In any style- <br />At any scale-
+          </p>
+        </div>
+      </div>
+
+      <div class="feature__image-container">
+        <img
+          class="feature__image"
+          src="images/feature.jpg"
+          alt="Wide view picture of a dog."
+        />
+      </div>
+    </section>
+
+    <!-- ----------------------- Call to action section ------------------------ -->
+    <section class="cta">
+      <h3 class="cta__title">Watch it take shape</h3>
+      <p class="cta__description">
+        Meet Dog 44, a complete age conversion platform, made for anyone with a
+        pet, and a drive to know their pets age. Enter the age of your pet and
+        watch as the age is converted into dog years. Can you imagine it?
+      </p>
+
+      <!-- I want to render an age conversion calculator form using DOM manipulation -->
+      <form class="cta__form">
+        <div class="cta__form-group">
+          <label for="age">Your pets age:</label>
+          <input type="text" placeholder="Enter your pets age" />
+        </div>
+        <div class="cta__form-group">
+          <label for="size">Your pets size:</label>
+          <select id="course">
+            <option value="" selected disabled>Choose a weight</option>
+            <option value="small">&lt;20 lbs</option>
+            <option value="medium">20-50 lbs</option>
+            <option value="large">50-90 lbs</option>
+            <option value="giant">&gt;90 lbs</option>
+          </select>
+        </div>
+      </form>
+      <button class="cta__button cta__button--primary">
+        Let's make your dreams a reality
+      </button>
+    </section>
+
+    <!-- ---------------------------- Video section ---------------------------- -->
+    <section class="video">
+      <h3 class="video__title">Funsies</h3>
+      <p class="video__description">
+        Golden Retrievers are friendly, intelligent, and energetic dogs with a
+        water-repellent, golden coat. Originally bred in Scotland for hunting,
+        they are now popular family pets, therapy dogs, and service animals
+        known for being gentle with children. They need lots of daily exercise,
+        love to play fetch, and have a famous "smiling" expression.
+      </p>
+
+      <!-- No video yet, instead render a <ul> tag of fun facts when buttons clicked, make sure they're 50/50, use flex 1, flex-basis, etc -->
+      <div class="video__controls">
+        <button class="video__button video__button--primary">
+          🤓 Fun facts
+        </button>
+        <button class="video__button video__button--secondary">
+          🫪 More fun facts
+        </button>
+      </div>
+      <div class="video__container"></div>
+    </section>
+
+    <!-- -------------------------- Programs section --------------------------- -->
+    <section class="programs">
+      <h2>Explore more about other dog breeds and facts about them</h2>
+      <div class="programs__cards">
+        <div class="programs__card"></div>
+        <div class="programs__card"></div>
+        <div class="programs__card"></div>
+      </div>
+    </section>
+
+    <!-- ---------------------------- Form section ----------------------------- -->
+    <section class="element">
+      <div class="element__left">
+        <div class="element__placeholder"></div>
+      </div>
+      <div class="element__right">
+        <h2>Sign up for daily content!</h2>
+        <p class="element__subtitle">Fill out our form below, only if...</p>
+        <form class="element__form">
+          <h3>Your interests are:</h3>
+          <ul class="element__list">
+            <li class="element__list-item">Dogs</li>
+            <li class="element__list-item">Caring about dogs</li>
+            <li class="element__list-item">
+              Cool dogs, funny dogs, and anything in between
+            </li>
+          </ul>
+
+          <div class="element__form-group">
+            <label for="username">Email:</label>
+            <input type="text" id="email" placeholder="Enter email" />
+          </div>
+          <div class="element__form-group">
+            <label for="course">Select frequency:</label>
+            <select id="course">
+              <option value="" selected disabled>Every:</option>
+              <option value="day">Day</option>
+              <option value="week">Week</option>
+              <option value="month">Month</option>
+            </select>
+          </div>
+
+          <button type="submit" class="element__button">Submit</button>
+        </form>
+      </div>
+    </section>
     <script type="module" src="main.js"></script>
   </body>
 </html>

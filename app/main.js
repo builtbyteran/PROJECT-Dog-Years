@@ -11,3 +11,7 @@ const myAgeInDogYears = (myName, myAge) => {
 };
 
 myAgeInDogYears(myName, myAge);
+
+const renderDogCalculator = () => {
+  document.getElementById('cta__button cta__button--primary').replaceChildren();
+};

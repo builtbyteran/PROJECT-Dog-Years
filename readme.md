@@ -2,11 +2,10 @@ Bringing back a very old project to play around with CSS and JS Modules.
 
 Roadmap:
 
-- Add form for inputting age and name utilizing events to handle conversions instead of hardcoding
+- When age conversions are successfully calculated, display confetti after the loading spinner
+- Add JS to render stuff when buttons are clicked, no logic yet, just templates
 - Build calculator to handle calculating dog years depending on breed/size.
-- Render to DOM
 - Add styling (responsive)
-- Possibly include converting other types of animals ages
 
 How to run:
 

@@ -1,0 +1,366 @@
+/* -------------------------------------------------------------------------- */
+/*                                Hero section                                */
+/* -------------------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff8ee;
+  color: #4a3210;
+  font-family: 'Sour Gummy', Times, serif;
+}
+
+.hero {
+  padding: 100px;
+}
+
+.hero__title {
+  color: #f5f5f5;
+}
+
+.hero__description {
+  color: #f5c842;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Feature section                              */
+/* -------------------------------------------------------------------------- */
+.feature {
+  padding: 100px;
+}
+
+.feature__item {
+  padding: 30px 0;
+}
+
+.feature__title {
+  color: #c8671a;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+
+.feature__title--selected {
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           Call to action section                           */
+/* -------------------------------------------------------------------------- */
+.cta {
+  background-color: #d4873b;
+  color: #fff;
+  padding: 100px;
+  text-align: center;
+}
+
+.cta__description {
+  color: #fae0c0;
+  padding: 15px 0;
+}
+
+button {
+  border: none;
+  color: none;
+}
+
+.cta__form {
+  padding: 40px 0;
+}
+
+.cta__button {
+  color: #333;
+  background-color: #fae0c0;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.cta__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cta__form-group label {
+  color: #fae0c0;
+  font-weight: 500;
+}
+
+.cta__form-group input,
+.cta__form-group select {
+  border: 1px solid #e8c99a;
+  border-radius: 4px;
+  /* Sometimes input and select have their own font style, so I inherit it so it gets the font styles I chose */
+  font-family: inherit;
+  padding: 12px;
+}
+
+/* Highlights the boxes with a better color for the app */
+.cta__form-group input:focus,
+.cta__form-group select:focus {
+  border-color: #d4873b;
+  box-shadow: 0 0 0 2px rgba(212, 135, 59, 0.2);
+  outline: none;
+}
+
+.cta__form-group select {
+  background-color: white;
+  cursor: pointer;
+}
+
+.cta__form-group option {
+  padding: 8px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Video section                               */
+/* -------------------------------------------------------------------------- */
+.video {
+  font-weight: 500;
+  padding: 100px;
+  text-align: center;
+}
+
+.video__title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.video__description {
+  color: #8c6a3f;
+  font-weight: 300;
+  margin: 10px 0 0 0;
+}
+
+.video__controls {
+  margin: 20px 0 0 0;
+}
+
+.video__button {
+  background: none;
+  border: 1px solid #d4873b;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+.video__button--primary {
+  margin: 0 10px 0 0;
+}
+
+.video__container {
+  background-color: #e8c99a;
+  box-shadow: 1px 4px 7px 4px rgba(74, 50, 16, 0.25);
+  height: 500px;
+  margin: 20px 0 0 0;
+  width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Programs section                              */
+/* -------------------------------------------------------------------------- */
+.programs {
+  background-color: #f5e6cc;
+  padding: 100px 100px 200px 100px;
+}
+
+.programs__cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 20px 0 0 0;
+}
+
+.programs__card {
+  background-color: #e8c99a;
+  height: 400px;
+  padding: 30px;
+  flex-basis: 30%;
+  border-radius: 4px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Form section                                */
+/* -------------------------------------------------------------------------- */
+.element {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  gap: 60px;
+  background-color: #fff8ee;
+}
+
+.element__left {
+  flex: 1;
+}
+
+.element__right {
+  flex: 1;
+}
+
+.element__subtitle {
+  color: #8c6a3f;
+  margin: 10px 0 30px 0;
+}
+
+.element__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.element__placeholder {
+  background-color: #e8c99a;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.element__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.element__list-item {
+  border-bottom: 1px solid #e8c99a;
+  color: #8c6a3f;
+  padding: 8px 0;
+}
+
+.element__list-item:before {
+  color: #c8671a;
+  /* You can look up symbols, got this from symbol spy */
+  content: '→';
+  margin: 0 10px 0 0;
+}
+
+.element__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.element__form-group label {
+  color: #4a3210;
+  font-weight: 500;
+}
+
+.element__form-group input,
+.element__form-group select {
+  border: 1px solid #e8c99a;
+  border-radius: 4px;
+  /* Sometimes input and select have their own font style, so I inherit it so it gets the font styles I chose */
+  font-family: inherit;
+  padding: 12px;
+}
+
+/* Highlights the boxes with a better color for the app */
+.element__form-group input:focus,
+.element__form-group select:focus {
+  border-color: #d4873b;
+  box-shadow: 0 0 0 2px rgba(212, 135, 59, 0.2);
+  outline: none;
+}
+
+.element__form-group select {
+  background-color: white;
+  cursor: pointer;
+}
+
+.element__form-group option {
+  padding: 8px;
+}
+
+.element__button {
+  background-color: #d4873b;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 12px 24px;
+  transition: background-color 0.2s;
+}
+
+.element__button:hover {
+  background-color: #c8671a;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Images                                   */
+/* -------------------------------------------------------------------------- */
+
+.hero {
+  height: 70vh;
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(74, 50, 16, 0.55);
+  background-blend-mode: overlay;
+  text-align: center;
+  align-content: center;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.feature__container {
+  flex-basis: 50%;
+}
+
+.feature__image-container {
+  flex-basis: 50%;
+}
+
+.feature__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.cta__title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.cta__button:hover {
+  background-color: #f5c842;
+  cursor: pointer;
+}
+
+.video__button--primary {
+  color: #d4873b;
+}
+
+.video__button--primary:hover {
+  background-color: #d4873b;
+  color: white;
+  cursor: pointer;
+}
+
+.video__button--secondary {
+  color: #d4873b;
+}
+
+.video__button--secondary:hover {
+  background-color: #d4873b;
+  color: white;
+  cursor: pointer;
+}
+
+.video__container {
+  background-image: url('images/video.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  background-blend-mode: overlay;
+  background-color: rgba(74, 50, 16, 0.15);
+  border-radius: 4px;
+}

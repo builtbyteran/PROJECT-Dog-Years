@@ -1,6 +1,18 @@
-export const getDogYears = (age) => {
-  const earlyYears = 2 * 10.5;
-  const laterYears = 4 * (age - 2);
+export const getDogYears = (age, size) => {
+  if (age <= 0) return 0;
+  if (age === 1) return 15;
+  if (age === 2) return 24;
 
-  return earlyYears + laterYears;
+  const yearsAfterTwo = age - 2;
+
+  const rates = {
+    small: 4.32,
+    medium: 5.29,
+    large: 6.29,
+    giant: 7.29,
+  };
+
+  const rate = rates[size];
+
+  return Math.round(24 + yearsAfterTwo * rate);
 };

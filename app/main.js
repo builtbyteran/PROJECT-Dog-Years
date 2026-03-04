@@ -1,23 +1,14 @@
 import { getDogYears } from './modules/getDogYears.js';
 
-const myAge = 25;
-
-const myName = 'Teran';
-
-const myAgeInDogYears = (myName, myAge) => {
-  console.log(
-    `My name is ${myName}. I am ${myAge} years old, which is ${getDogYears(myAge)} years old in dog years.`,
-  );
-};
-
-myAgeInDogYears(myName, myAge);
-
 document.querySelector('#getDogYears').addEventListener('submit', (event) => {
   event.preventDefault();
 
   const input = document.querySelector('#setDogAge');
   const age = input.value.trim();
-  const result = getDogYears(age);
+  const select = document.querySelector('#setDogSize');
+  const size = select.value;
+
+  const result = getDogYears(age, size);
 
   input.value = '';
   renderDogYears(result);

@@ -14,5 +14,9 @@ export const getDogYears = (age, size) => {
 
   const rate = rates[size];
 
+  if (!rate) {
+    throw alert(`Unknown size. Use small, medium, large, or giant.`);
+  }
+
   return Math.round(24 + yearsAfterTwo * rate);
 };

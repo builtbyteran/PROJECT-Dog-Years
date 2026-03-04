@@ -53,14 +53,14 @@
       </p>
 
       <!-- I want to render an age conversion calculator form using DOM manipulation -->
-      <form class="cta__form">
+      <form id="getDogYears" class="cta__form">
         <div class="cta__form-group">
           <label for="age">Your pets age:</label>
-          <input type="text" placeholder="Enter your pets age" />
+          <input type="text" id="setDogAge" placeholder="Enter your pets age" />
         </div>
         <div class="cta__form-group">
           <label for="size">Your pets size:</label>
-          <select id="course">
+          <select id="setDogSize">
             <option value="" selected disabled>Choose a weight</option>
             <option value="small">&lt;20 lbs</option>
             <option value="medium">20-50 lbs</option>
@@ -68,10 +68,11 @@
             <option value="giant">&gt;90 lbs</option>
           </select>
         </div>
+        <button type="submit" class="cta__button cta__button--primary">
+          Let's make your dreams a reality
+        </button>
       </form>
-      <button class="cta__button cta__button--primary">
-        Let's make your dreams a reality
-      </button>
+      <div id="setDogYears"></div>
     </section>
 
     <!-- ---------------------------- Video section ---------------------------- -->

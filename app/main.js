@@ -12,6 +12,25 @@ const myAgeInDogYears = (myName, myAge) => {
 
 myAgeInDogYears(myName, myAge);
 
-const renderDogCalculator = () => {
-  document.getElementById('cta__button cta__button--primary').replaceChildren();
+document.querySelector('#getDogYears').addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const input = document.querySelector('#setDogAge');
+  const age = input.value.trim();
+  const result = getDogYears(age);
+
+  input.value = '';
+  renderDogYears(result);
+});
+
+const renderDogYears = (result) => {
+  document.querySelector('#setDogYears').replaceChildren();
+
+  const template = `
+    <h1>Your dog is ${result} years old!</h1>
+  `;
+
+  document
+    .querySelector('#setDogYears')
+    .insertAdjacentHTML('beforeend', template);
 };
